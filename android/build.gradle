@@ -1,0 +1,39 @@
+group 'br.com.popcode.barcode_finder'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.2.2'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://repo.grails.org/grails/core/" }
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 34
+
+    defaultConfig {
+        namespace 'br.com.popcode.barcode_finder'
+        minSdkVersion 21
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+}
+
+dependencies {
+    implementation 'com.google.mlkit:barcode-scanning:17.3.0'
+    implementation 'com.github.DImuthuUpe:AndroidPdfViewer:3.1.0-beta.1'
+}
