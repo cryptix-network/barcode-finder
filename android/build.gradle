@@ -6,7 +6,7 @@ buildscript {
         mavenCentral()
         google()
         gradlePluginPortal()
-        maven { url "http://jcenter.bintray.com" }
+         maven { url "https://jcenter.bintray.com" }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.2.2'
@@ -18,7 +18,7 @@ rootProject.allprojects {
         mavenCentral()
         google()
         gradlePluginPortal()
-          maven { url "http://jcenter.bintray.com" }
+         maven { url "https://jcenter.bintray.com" }
     }
 }
 
@@ -37,6 +37,6 @@ android {
 }
 
 dependencies {
-    implementation 'com.google.mlkit:barcode-scanning:17.3.0'
-    implementation 'com.github.DImuthuUpe:AndroidPdfViewer:3.1.0-beta.1'
+   implementation 'com.google.mlkit:barcode-scanning:17.3.0'
+    implementation 'com.github.mhiew:android-pdf-viewer:3.2.0-beta.1'
 }
