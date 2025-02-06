@@ -6,7 +6,7 @@ buildscript {
         google()
         mavenCentral()
          jcenter()
-         maven { url 'https://jitpack.io' } 
+          maven { url "http://jcenter.bintray.com" }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.2.2'
@@ -18,7 +18,7 @@ rootProject.allprojects {
         google()
         mavenCentral()
         jcenter()
-        maven { url "https://repo.grails.org/grails/core/" }
+         maven { url "http://jcenter.bintray.com" }
       
     }
 }
