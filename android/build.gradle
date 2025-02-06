@@ -17,8 +17,9 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
+        jcenter()
         maven { url "https://repo.grails.org/grails/core/" }
-         maven { url 'https://jitpack.io' } 
+      
     }
 }
 
