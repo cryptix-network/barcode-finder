@@ -5,7 +5,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' } 
+         maven { url 'https://jitpack.io' } 
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.2.2'
@@ -17,7 +17,7 @@ rootProject.allprojects {
         google()
         mavenCentral()
         maven { url "https://repo.grails.org/grails/core/" }
-        maven { url 'https://jitpack.io' }
+         maven { url 'https://jitpack.io' } 
     }
 }
 
@@ -37,5 +37,5 @@ android {
 
 dependencies {
     implementation 'com.google.mlkit:barcode-scanning:17.3.0'
-    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0'
+    implementation 'com.github.DImuthuUpe:AndroidPdfViewer:3.1.0-beta.1'
 }
